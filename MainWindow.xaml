@@ -1,0 +1,36 @@
+﻿<Window x:Class="Torg_texnic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Torg_texnic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="332" Width="468">
+    <Grid RenderTransformOrigin="0.461,0.692" Margin="1,-26,-474,-126">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.226"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="112*"/>
+            <ColumnDefinition Width="243*"/>
+            <ColumnDefinition Width="570*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Войти" Height="NaN" Margin="17,257,210,165" Width="NaN" FontFamily="Times New Roman" FontSize="16" Click="Button_Click_1" Background="#FF6E8BBB" Grid.ColumnSpan="2"/>
+        <Button Content="Отмена" Margin="114,256,557,162" Height="NaN" Width="NaN" RenderTransformOrigin="0.309,0.701" FontFamily="Times New Roman" FontSize="16" Click="Button_Click_2" Grid.Column="1" Grid.ColumnSpan="2" Background="#FF7F9CCA"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,134,0,0" Width="257" Grid.Column="1" Height="28" Grid.ColumnSpan="2" FontFamily="Times New Roman" FontSize="16" Foreground="#FFBDC173"/>
+        <Label Content="Логин:" Height="NaN" Margin="22,127,246,271" Width="NaN" FontFamily="Times New Roman" FontSize="16" Foreground="#FFA28B4D" Grid.ColumnSpan="2">
+            <Label.FocusVisualStyle>
+                <Style/>
+            </Label.FocusVisualStyle>
+        </Label>
+        <Label Content="Пароль:" Height="NaN" Margin="22,189,246,214" Width="NaN" FontFamily="Times New Roman" FontSize="16" Foreground="#FFA2936B" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,189,0,0" Width="257" Grid.Column="1" Height="30" Grid.ColumnSpan="2" FontFamily="Times New Roman" FontSize="16" Foreground="#FFBEBF83"/>
+        <Label Content="Авторизация" Margin="21,45,27,348" FontSize="36" Grid.ColumnSpan="2" Foreground="#FF1D20D6"/>
+
+    </Grid>
+</Window>
